@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Josh's Mad Libs</title>
+    
+    <script>
+        var currentStory;
+    </script>
+    </head>
+    
+<body>
+    
+<div id="pageWrapper">
+    <div id='heading'>
+    Mad Libs
+    </div>
+    <div id="mainContent">
+        <div id='storySelect'>
+                <button class='story' onclick="startStory1()">Story One</button>
+                <button class='story' onclick="startStory2()">Story Two</button>
+                <button class='story' onclick="startStory3()">Story Three</button>
+                <!--<button class='story' onclick="startStory4()">Story Four</button>
+                <button class='story' onclick="startStory5()">Story Five</button> -->
+                
+            </div> <!-- storySelect -->
+        <div id='leftSide'>
+            
+     
+<!----------------------------------------------------
+STORY 1 INPUTS
+------------------------------------------------------>
+            <div id='story1InputSection'>
+                <ul>
+                    <li><h2>All a Dream</h2></li>
+                    <li><label for='story1Input1'>place</label><input id='story1Input1'></li>
+                    <li><label for='story1Input2'>adjective </label><input id='story1Input2'></li>
+                    <li><label for='story1Input3'>verb ending with -ing</label><input id='story1Input3'></li>
+                    <li><label for='story1Input4'>famous person</label><input id='story1Input4'></li>
+                    <li><label for='story1Input5'>friend</label><input id='story1Input5'></li>
+                    <li><label for='story1Input6'>present tense verb</label><input id='story1Input6'></li>
+                    <li><label for='story1Input7'>room</label><input id='story1Input7'></li>
+                    <li><label for='story1Input8'>musical instrument</label><input id='story1Input8'></li> 
+                </ul>
+            </div> <!-- story1InputSection -->
+            
+            
+            
+            
+<!----------------------------------------------------
+STORY 2 INPUTS
+------------------------------------------------------>
+             <div id='story2InputSection'>
+                 <ul>
+                     <li><h2>The Camping Trip</h2></li>
+                     <li><label for='story2Input1'>adjective </label><input id='story2Input1'></li>
+                     <li><label for='story2Input2'>female friend </label><input id='story2Input2'></li>
+                     <li><label for='story2Input3'>femaile friend 2 </label><input id='story2Input3'></li>
+                     <li><label for='story2Input4'>past tense verb </label><input id='story2Input4'></li>
+                     <li><label for='story2Input5'>verb ending with -ing </label><input id='story2Input5'></li>
+                     <li><label for='story2Input6'>food (plural) </label><input id='story2Input6'></li>
+                     <li><label for='story2Input7'>plural noun </label><input id='story2Input7'></li>
+                     <li><label for='story2Input8'>verb ending with -ing </label><input id='story2Input8'></li>
+                     <li><label for='story2Input9'>body part (singular) </label><input id='story2Input9'></li>
+                     <li><label for='story2Input10'>plural noun </label><input id='story2Input10'></li>
+                     <li><label for='story2Input11'>plural noun 2 </label><input id='story2Input11'></li>
+                     <li><label for='story2Input12'>beverage </label><input id='story2Input12'></li>
+                     <li><label for='story2Input13'>adjective 2 </label><input id='story2Input13'></li>
+                 </ul>
+            </div> <!--story2InputSection -->
+            
+            
+            
+            
+            
+<!----------------------------------------------------
+STORY 3 INPUTS
+------------------------------------------------------>
+            <div id='story3InputSection'>
+                <ul>
+                    <li><h2>The Surprise Garden</h2></li>
+                    <li><label for='story3Input1'>adjective </label><input id='story3Input1'></li>
+                    <li><label for='story3Input2'>female  </label><input id='story3Input2'></li>
+                    <li><label for='story3Input3'>male  </label><input id='story3Input3'></li>
+                    <li><label for='story3Input4'>singular noun </label><input id='story3Input4'></li>
+                    <li><label for='story3Input5'>adjective 2 </label><input id='story3Input5'></li>
+                    <li><label for='story3Input6'>present tense verb </label><input id='story3Input6'></li>
+                    <li><label for='story3Input7'>verb ending with -ing </label><input id='story3Input7'></li>
+                    <li><label for='story3Input8'>vegetable (singular) </label><input id='story3Input8'></li>
+                    <li><label for='story3Input9'>color  </label><input id='story3Input9'></li>
+                    <li><label for='story3Input10'>flower (singular) </label><input id='story3Input10'></li>
+                    <li><label for='story3Input11'>food (plural) </label><input id='story3Input11'></li>
+                    <li><label for='story3Input12'>exclamation  </label><input id='story3Input12'></li>
+                    <li><label for='story3Input13'>adjective 3 </label><input id='story3Input13'></li>
+                    <li><label for='story3Input14'>adjective 4 </label><input id='story3Input14'></li>
+                    <li><label for='story3Input15'>present tense verb 2 </label><input id='story3Input15'></li>
+                    <li><label for='story3Input16'>adverb </label><input id='story3Input16'></li>
+                    <li><label for='story3Input17'>past tense verb 3 </label><input id='story3Input17'></li>
+                    <li><label for='story3Input18'>adjective  5 </label><input id='story3Input18'></li>
+                    <li><label for='story3Input19'>color 2 </label><input id='story3Input19'></li>
+                
+                
+                </ul>
+                
+            </div> <!--story3InputSection -->
+            
+            
+            
+            
+            
+            
+            
+<!----------------------------------------------------
+STORY 4 INPUTS
+------------------------------------------------------>
+            
+        
+            
+<!----------------------------------------------------
+STORY 5 INPUTS
+------------------------------------------------------>
+            
+            
+            
+<!----------------------------------------------------
+RUN GAME BUTTON
+------------------------------------------------------>
+             <button id='startGame' onclick="runGame()">
+                <p>Let's Play!</p>
+             </button>
+        </div> <!-- leftSide -->
+        
+       
+        <div id='rightSide'>
+            <div id="answers"> 
+                
+                
+                
+<!----------------------------------------------------
+STORY 1 TEXT
+------------------------------------------------------>
+                
+                <div id="story1">
+                    <h1>All a Dream</h1>
+                    <p>I fell asleep yesterday listening to an old album that my mom had.<br>
+                    I really enjoyed it, though I had a weird dream. It was kind of like one of the old songs.</p>
+
+                    <p>I've been workin' in <span class='place'>PLACE</span>,</p>
+                    <p>All the <span class='adjective'>ADJECTIVE</span>  day. </p>
+                    <p>I've been workin' in <span class='place'>PLACE</span>,</p>
+                    <p>Just to pass the time away. </p>
+                    <p>Don't you hear the whistle <span class='verbING'>VERB ENDING WITH ING?</span></p>
+                    <p>Rise up so early in the morn. </p>
+                    <p></p>Don't you hear <span class='famousPerson'>FAMOUS PERSON shouting</span></p>
+                    <p>“<span class='friend'>FRIEND</span>, <span class='presentVerb'>PRESENT TENSE VERB</span> your horn? ”</p><br>
+
+                    <p><span class='friend'>FRIEND</span>, won't you <span class='verbING'>PRESENT TENSE VERB</span> ,</p>
+                    <p><span class='friend'>FRIEND</span>, won't you <span class='verbING'>PRESENT TENSE VERB</span> ,</p><br>
+
+                    <p></p><span class='friend'>FRIEND</span>, won't you <span class='verbING'>PRESENT TENSE VERB</span> your horn?</p><br>
+
+                    <p><span class='friend'>FRIEND</span>, won't you <span class='verbING'>PRESENT TENSE VERB</span> ,</p>
+                    <p><span class='friend'>FRIEND</span>, won't you <span class='verbING'>PRESENT TENSE VERB</span> ,</p>
+                    <p><span class='friend'>FRIEND</span>, won't you <span class='verbING'>PRESENT TENSE VERB</span> your horn?</p><br>
+
+                    <p>Someone's in the <span class='room'>ROOM</span> with <span class='friend'>FRIEND</span>.</p>
+                    <p>Someone's in the <span class='room'>ROOM</span>, I know. </p>
+                    <p>Someone's in the <span class='room'>ROOM</span> with <span class='friend'>FRIEND</span></p>
+                    <p>Strumming on the old <span class='musicalInstrument'>MUSICAL INSTRUMENT</span>.</p><br>
+
+                    <p>It was the weirdest dream I've had in a long time!</p>
+            
+                </div> <!-- story1 -->
+                
+                
+<!----------------------------------------------------
+STORY 2 TEXT
+------------------------------------------------------>
+                
+                <div id="story2">
+                    <h1>The Camping Trip</h1>
+                    <p>It was a cold, <span class='story2Input1'>adjective</span> night. <span class='story2Input2'>female friend
+                    </span> and <span class='story2Input3'> <br>
+                    female friend 2</span> <span class='story2Input4'>past tense verb</span> around the campfire, 
+                    <span class='story2Input5'>verb ending with -ing</span> songs and eating <span class='story2Input6'>food (plural).</p> </span>
+
+                    <p>Soon they got tired, climbed into their <span class='story2Input7'> plural noun</span>, and eventually fell asleep. Suddenly, they were 
+                    both wide awake. 
+                    There was a loud <span class='story2Input8'>verb ending with -ing</span> sound outside the tent. <span class='story2Input3'>female friend 2</span> 
+                    grabbed <span class='story2Input2'>female friend</span>'s 
+                    <span class='story2Input9'>body part (singular)</span> and held on for dear life. <span class='story2Input2'>female friend</span> 
+                    started chanting, “Lions and <span class='story2Input10'>plural noun</span>
+                    and <span class='story2Input11'>plural noun 2</span>, oh my!” over and over again.</p>
+
+                    <p>Then into their tent fell their friend <span class='story2Input2'>female friend</span>. <span class='story2Input2'> 
+                    female friend</span> had been thirsty and had gone into 
+                    the house for some <span class='story2Input12'>beverage</span>. Now the <span class='story2Input12'>beverage</span> was on the floor of their tent. But they all had a good 
+                    laugh and went back to sleep.</p>
+
+                    <p>It turned out to be a <span class='story2Input13'>very adjective 2</span> camping trip. And maybe next time 
+                        they'll even leave female 
+                    <span class='story2Input3'>friend 2</span>'s backyard.</p>
+                    
+                    
+                    
+                    
+                    
+                </div> <!-- story2 -->
+                
+                
+                
+<!----------------------------------------------------
+STORY 3 TEXT
+------------------------------------------------------>
+                <div id='story3'>
+                    <h1>The Surprise Garden</h1>
+                    <p>One <span class='story3Input1'>ADJECTIVE</span> afternoon while their mom and dad were running errands, <span class='story3Input2'>FEMALE</span> and her little brother,
+                    <span class='story3Input3'>MALE</span>, decided to surprise their mom and dad by planting a garden. <span class='story3Input2'>FEMALE</span> went to the garage and got a(n) 
+                    <span class='story3Input4'>SINGULARNOUN</span> and shovel and started to get the soil ready while <span class='story3Input3'>MALE</span> rode his bike to the market to buy some seeds.</p>
+
+                    <p><span class='story3Input2'>FEMALE</span> was making <span class='story3Input5'>ADJECTIVE 2</span> progress in the backyard. Of course, she first had to <span class='story3Input6'>PRESENT TENSE VERB</span> up a lot 
+                    of the lawn so there would be plenty of room for the new garden.</p>
+
+                    <p>Then <span class='story3Input3'>MALE</span> rode into the backyard. His backpack was <span class='story3Input7'>VERB ENDING WITH ING</span>! He pulled out <span class='story3Input8'>VEGETABLE (SINGULAr) </span>
+                    seeds, tiny <span class='story3Input9'>COLOR</span> <span class='story3Input10'>FLOWER (SINGULAR)</span> seedlings, a can of sunflower seeds, and a big jar of pickled <span class='story3Input11'>FOOD (PLURAL)</span>.</p>
+
+                    <p>“OK,” said <span class='story3Input2'>FEMALE</span>, "I get the <span class='story3Input8'>VEGETABLE (SINGULAr)</span> seeds and <span class='story3Input10'>FLOWER (SINGULAR)</span> seedlings, but what about the 
+                    other stuff?”</p>
+
+                    <p>“Well, Mom's favorite flowers are sunflowers, and Dad's favorite snack is pickled <span class='story3Input11'>FOOD (PLURAL)</span>, so I figured 
+                    we'd plant a nice pickled <span class='story3Input11'>FOOD (PLURAL)</span> tree! <span class='story3Input12'>EXCLAMATION</span>, why are you looking at me like I'm <span class='story3Input13'>ADJECTIVE 3</span>?” asked <span class='story3Input3'>MALE</span>.</p>
+
+                    <p>“Umm… because you don't get <span class='story3Input14'>ADJECTIVE 4</span>, tall sunflowers from roasted, salted sunflower seeds! And you certainly 
+                    can't <span class='story3Input15'> PRESENT TENSE VERB 2</span> a pickled <span class='story3Input11'> FOOD (PLURAL)</span> tree!” explained <span class='story3Input2'>FEMALE</span> <span class='story3Input6'>ADVERB</span>.</p>
+
+                    <p>Just then, their mom and dad came home. They <span class='story3Input17'>PRESENT TENSE VERB 3</span> in the backyard and helped <span class='story3Input2'>FEMALE</span> and <span class='story3Input3'>MALE</span> 
+                    plant the <span class='story3Input18'>VEGETABLE (SINGULAr)</span> seeds and <span class='story3Input10'>FLOWER (SINGULAR)</span> seedlings. They replanted some of the lawn, too. After they 
+                    were done, they had a very <span class='story3Input18'>ADJECTIVE 5</span> picnic of sunflower seeds and pickled <span class='story3Input11'>FOOD (PLURAL)</span>.</p>
+
+                    <p>Dad said, “What a surprise this was!”</p>
+
+                    <p>Mom agreed, “I never knew our kids had such <span class='story3Input19'>COLOR 2</span> thumbs!”</p>
+                    
+                    
+                    
+                    
+                    
+                    
+                </div> <!-- story3 -->
+                
+                
+                
+                
+                
+                
+<!----------------------------------------------------
+STORY 4 TEXT
+------------------------------------------------------>
+                
+                
+                
+<!----------------------------------------------------
+STORY  TEXT
+------------------------------------------------------>
+                
+                
+                
+            </div> <!-- answers -->
+        </div> <!-- rightSide -->
+
+        <script>
+            var runGame = function() {
+                if(currentStory === 1) {
+                    document.getElementById("story1").style.display = "inline-block"; //shows story text
+                    
+                    var story1Space1 = document.getElementById("story1Input1").value;
+                    var placeArray = document.getElementsByClassName("place");
+                        for(var l1 = 0; l1 < placeArray.length; l1 ++) {
+                                    placeArray[l1].innerHTML = story1Space1;
+                        }
+
+                    var story1Space2 = document.getElementById("story1Input2").value;
+                    var adjArray = document.getElementsByClassName("adjective");
+                        for(var l2 = 0; l2 < adjArray.length; l2 ++) {
+                                    adjArray[l2].innerHTML = story1Space2;
+                        }
+
+
+                    var story1Space3 = document.getElementById("story1Input3").value;
+                    var verbINGArray = document.getElementsByClassName("verbING");
+                        for(var l3 = 0; l3 < verbINGArray.length; l3 ++) {
+                                    verbINGArray[l3].innerHTML = story1Space3;
+                        }
+
+                    var story1Space4 = document.getElementById("story1Input4").value;
+                    var famousPersonArray = document.getElementsByClassName("famousPerson");
+                        for(var l4 = 0; l4 < famousPersonArray.length; l4++) {
+                                    famousPersonArray[l4].innerHTML = story1Space4;   
+                        }
+
+                    var story1Space5 = document.getElementById("story1Input5").value;
+                    var friendArray = document.getElementsByClassName("friend");
+                        for(var l5 = 0; l5 < friendArray.length; l5 ++) {
+                                    friendArray[l5].innerHTML = story1Space5;
+                        }
+
+                    var story1Space6 = document.getElementById("story1Input6").value;
+                    var presentVerbArray = document.getElementsByClassName("presentVerb");
+                        for(l6 = 0; l6 < presentVerbArray.length; l6 ++) {
+                                    presentVerbArray[l6].innerHTML = story1Space6;   
+                        }
+
+                    var story1Space7 = document.getElementById("story1Input7").value;
+                    var roomArray = document.getElementsByClassName("room");
+                        for(l7 = 0; l7 < roomArray.length; l7 ++) {
+                                    roomArray[l7].innerHTML = story1Space7;   
+                        }
+
+                    var story1Space8 = document.getElementById("story1Input8").value;
+                    var musicalInstrumentArray = document.getElementsByClassName("musicalInstrument");
+                        for(l8 = 0; l8 < musicalInstrumentArray.length; l8 ++) {
+                                    musicalInstrumentArray[l8].innerHTML = story1Space8;   
+                        }
+                    } // end of first condition
+                
+                
+                
+                
+                
+                //begining of second condition
+                else if(currentStory === 2) {
+                     document.getElementById("story2").style.display = "inline-block";
+                    
+                     var story2Space1 = document.getElementById("story2Input1").value;
+                     var story2Space1Array = document.getElementsByClassName("story2Input1");
+                        for(var l1 = 0; l1 < story2Space1Array.length; l1 ++) {
+                                    story2Space1Array[l1].innerHTML = story2Space1;
+                        }
+                            
+                    var story2Space2 = document.getElementById("story2Input2").value;
+                    var story2Space2Array = document.getElementsByClassName("story2Input2");
+                        for(var l2 = 0; l2 < story2Space2Array.length; l2 ++) {
+                                    story2Space2Array[l2].innerHTML = story2Space2;
+                        }
+                            
+                    var story2Space3 = document.getElementById("story2Input3").value;
+                    var story2Space3Array = document.getElementsByClassName("story2Input3");
+                        for(var l3 = 0; l3 < story2Space3Array.length; l3 ++) {
+                                    story2Space3Array[l3].innerHTML = story2Space3;
+                        }
+                    
+                    var story2Space4 = document.getElementById("story2Input4").value;
+                    var story2Space4Array = document.getElementsByClassName("story2Input4");
+                        for(var l4 = 0; l4 < story2Space4Array.length; l4 ++) {
+                                    story2Space4Array[l4].innerHTML = story2Space4;
+                        }
+                    var story2Space5 = document.getElementById("story2Input5").value;
+                    var story2Space5Array = document.getElementsByClassName("story2Input5");
+                        for(var l5 = 0; l5 < story2Space5Array.length; l5 ++) {
+                                    story2Space5Array[l5].innerHTML = story2Space5;
+                        }
+                            
+                    var story2Space6 = document.getElementById("story2Input6").value;
+                    var story2Space6Array = document.getElementsByClassName("story2Input6");
+                        for(var l6 = 0; l6 < story2Space6Array.length; l6 ++) {
+                                    story2Space6Array[l6].innerHTML = story2Space6;
+                        }
+                            
+                    var story2Space7 = document.getElementById("story2Input7").value;
+                    var story2Space7Array = document.getElementsByClassName("story2Input7");
+                        for(var l7 = 0; l7 < story2Space7Array.length; l7 ++) {
+                                    story2Space7Array[l7].innerHTML = story2Space7;
+                        }
+                            
+                    var story2Space8 = document.getElementById("story2Input8").value;
+                    var story2Space8Array = document.getElementsByClassName("story2Input8");
+                        for(var l8 = 0; l8 < story2Space8Array.length; l8 ++) {
+                                    story2Space8Array[l8].innerHTML = story2Space8;
+                        }
+                            
+                    var story2Space9 = document.getElementById("story2Input9").value;
+                    var story2Space9Array = document.getElementsByClassName("story2Input9");
+                        for(var l9 = 0; l9 < story2Space9Array.length; l9 ++) {
+                                    story2Space9Array[l9].innerHTML = story2Space9;
+                        }
+                            
+                    var story2Space10 = document.getElementById("story2Input10").value;
+                    var story2Space10Array = document.getElementsByClassName("story2Input10");
+                        for(var l10 = 0; l10 < story2Space10Array.length; l10 ++) {
+                                    story2Space10Array[l10].innerHTML = story2Space10;
+                        }
+                            
+                    var story2Space11 = document.getElementById("story2Input11").value;
+                    var story2Space11Array = document.getElementsByClassName("story2Input11");
+                        for(var l11 = 0; l11 < story2Space11Array.length; l11 ++) {
+                                    story2Space11Array[l11].innerHTML = story2Space11;
+                        }
+                            
+                    var story2Space12 = document.getElementById("story2Input12").value;
+                    var story2Space12Array = document.getElementsByClassName("story2Input12");
+                        for(var l12 = 0; l12 < story2Space12Array.length; l12 ++) {
+                                    story2Space12Array[l12].innerHTML = story2Space12;
+                        }
+                            
+                    var story2Space13 = document.getElementById("story2Input13").value;
+                    var story2Space13Array = document.getElementsByClassName("story2Input13");
+                        for(var l13 = 0; l13 < story2Space13Array.length; l13 ++) {
+                                    story2Space13Array[l13].innerHTML = story2Space13;
+                        }
+                } // end of second condition
+                
+                else if(currentStory === 3){
+                    document.getElementById("story3").style.display = "inline-block";
+                    
+                    var story3Space1 = document.getElementById("story3Input1").value;
+                     var story3Space1Array = document.getElementsByClassName("story3Input1");
+                        for(var l1 = 0; l1 < story3Space1Array.length; l1 ++) {
+                                    story3Space1Array[l1].innerHTML = story3Space1;
+                        }
+                    
+                    var story3Space2 = document.getElementById("story3Input2").value;
+                     var story3Space2Array = document.getElementsByClassName("story3Input2");
+                        for(var l2 = 0; l2 < story3Space2Array.length; l2 ++) {
+                                    story3Space2Array[l2].innerHTML = story3Space2;
+                        }
+                    
+                    var story3Space3 = document.getElementById("story3Input3").value;
+                     var story3Space3Array = document.getElementsByClassName("story3Input3");
+                        for(var l3 = 0; l3 < story3Space3Array.length; l3 ++) {
+                                    story3Space3Array[l3].innerHTML = story3Space3;
+                        }
+                    
+                    var story3Space4 = document.getElementById("story3Input4").value;
+                     var story3Space4Array = document.getElementsByClassName("story3Input4");
+                        for(var l4 = 0; l4 < story3Space4Array.length; l4 ++) {
+                                    story3Space4Array[l4].innerHTML = story3Space4;
+                        }
+                    
+                    var story3Space5 = document.getElementById("story3Input5").value;
+                     var story3Space5Array = document.getElementsByClassName("story3Input5");
+                        for(var l5 = 0; l5 < story3Space5Array.length; l5 ++) {
+                                    story3Space5Array[l5].innerHTML = story3Space5;
+                        }
+                    
+                     var story3Space6 = document.getElementById("story3Input6").value;
+                     var story3Space6Array = document.getElementsByClassName("story3Input6");
+                        for(var l6 = 0; l6 < story3Space6Array.length; l6 ++) {
+                                    story3Space6Array[l5].innerHTML = story3Space6;
+                        }
+                    
+                     var story3Space7 = document.getElementById("story3Input7").value;
+                     var story3Space7Array = document.getElementsByClassName("story3Input7");
+                        for(var l7 = 0; l7 < story3Space7Array.length; l7 ++) {
+                                    story3Space7Array[l7].innerHTML = story3Space7;
+                        }
+                    
+                    var story3Space8 = document.getElementById("story3Input8").value;
+                     var story3Space8Array = document.getElementsByClassName("story3Input8");
+                        for(var l8 = 0; l8 < story3Space8Array.length; l8 ++) {
+                                    story3Space8Array[l8].innerHTML = story3Space8;
+                        }
+                    
+                    var story3Space9 = document.getElementById("story3Input9").value;
+                     var story3Space9Array = document.getElementsByClassName("story3Input9");
+                        for(var l9 = 0; l9 < story3Space9Array.length; l9 ++) {
+                                    story3Space9Array[l9].innerHTML = story3Space9;
+                        }
+                    
+                    var story3Space10 = document.getElementById("story3Input10").value;
+                     var story3Space10Array = document.getElementsByClassName("story3Input10");
+                        for(var l10 = 0; l10 < story3Space10Array.length; l10 ++) {
+                                    story3Space10Array[l10].innerHTML = story3Space10;
+                        }
+                    
+                    var story3Space11 = document.getElementById("story3Input11").value;
+                     var story3Space11Array = document.getElementsByClassName("story3Input11");
+                        for(var l11 = 0; l11 < story3Space11Array.length; l11 ++) {
+                                    story3Space11Array[l11].innerHTML = story3Space11;
+                        }
+                    
+                    var story3Space12 = document.getElementById("story3Input12").value;
+                     var story3Space12Array = document.getElementsByClassName("story3Input12");
+                        for(var l12 = 0; l12 < story3Space12Array.length; l12 ++) {
+                                    story3Space12Array[l12].innerHTML = story3Space12;
+                        }
+                    
+                    var story3Space13 = document.getElementById("story3Input13").value;
+                     var story3Space13Array = document.getElementsByClassName("story3Input13");
+                        for(var l13 = 0; l13 < story3Space13Array.length; l13 ++) {
+                                    story3Space13Array[l13].innerHTML = story3Space13;
+                        }
+                    
+                    var story3Space14 = document.getElementById("story3Input14").value;
+                     var story3Space14Array = document.getElementsByClassName("story3Input14");
+                        for(var l14 = 0; l14 < story3Space14Array.length; l14 ++) {
+                                    story3Space14Array[l14].innerHTML = story3Space14;
+                        }
+                    
+                    var story3Space15 = document.getElementById("story3Input15").value;
+                     var story3Space15Array = document.getElementsByClassName("story3Input15");
+                        for(var l15 = 0; l15 < story3Space15Array.length; l15 ++) {
+                                    story3Space15Array[l15].innerHTML = story3Space15;
+                        }
+                    
+                    var story3Space16 = document.getElementById("story3Input16").value;
+                     var story3Space16Array = document.getElementsByClassName("story3Input16");
+                        for(var l16 = 0; l16 < story3Space16Array.length; l16 ++) {
+                                    story3Space16Array[l16].innerHTML = story3Space16;
+                        }
+                    
+                    var story3Space17 = document.getElementById("story3Input17").value;
+                     var story3Space17Array = document.getElementsByClassName("story3Input17");
+                        for(var l17 = 0; l17 < story3Space17Array.length; l17 ++) {
+                                    story3Space17Array[l17].innerHTML = story3Space17;
+                        }
+                    
+                     var story3Space18 = document.getElementById("story3Input18").value;
+                     var story3Space18Array = document.getElementsByClassName("story3Input18");
+                        for(var l18 = 0; l18 < story3Space18Array.length; l18 ++) {
+                                    story3Space18Array[l18].innerHTML = story3Space18;
+                        }
+                    
+                     var story3Space19 = document.getElementById("story3Input19").value;
+                     var story3Space19Array = document.getElementsByClassName("story3Input19");
+                        for(var l19 = 0; l19 < story3Space19Array.length; l19 ++) {
+                                    story3Space19Array[l19].innerHTML = story3Space19;
+                        }
+                    
+                } //end of third condition
+            }
+            
+            
+            var clearStories = function() {
+                    //clear all input areas and stories
+                    document.getElementById("story1InputSection").style.display = "none";
+                    document.getElementById("story1").style.display = "none";
+
+                    document.getElementById("story2InputSection").style.display = "none";
+                    document.getElementById("story2").style.display = "none";
+
+                    document.getElementById("story3InputSection").style.display = "none";
+                    document.getElementById("story3").style.display = "none";
+
+                    //document.getElementById("story4InputSection").style.display = "none";
+                    //document.getElementById("story4").style.display = "none";
+
+                    //document.getElementById("story5InputSection").style.display = "none";
+                    //document.getElementById("story5").style.display = "none";
+            }
+            
+            var startStory1 = function() {
+           
+                clearStories();
+                document.getElementById("story1InputSection").style.display = "inline-block"; //shows input section
+                document.getElementById("startGame").style.display = "inline-block"; //shows start game button
+                currentStory = 1;
+            }
+            
+            var startStory2 = function() {
+                clearStories();
+                document.getElementById("story2InputSection").style.display = "inline-block"; // shows input section
+                document.getElementById("startGame").style.display = "inline-block"; //shows start game button
+                currentStory = 2;
+            }
+            
+            var startStory3 = function() {
+                clearStories();
+                document.getElementById("story3InputSection").style.display = "inline-block"; // shows input section
+                document.getElementById("startGame").style.display = "inline-block"; //shows start game button
+                currentStory = 3;
+            }
+            
+              var startStory4 = function() {
+                clearStories();
+                document.getElementById("story4InputSection").style.display = "inline-block"; // shows input section
+                document.getElementById("startGame").style.display = "inline-block"; //shows start game button
+                currentStory = 4;
+            }
+              
+               var startStory5 = function() {
+                clearStories();
+                document.getElementById("story5InputSection").style.display = "inline-block"; // shows input section
+                document.getElementById("startGame").style.display = "inline-block"; //shows start game button
+                currentStory = 5;
+            }
+            
+        
+    
+        </script>
+    
+        </div> <!-- mainContent -->
+    </div> <!-- pageWrapper -->
+    
+</body>
+
+</html>
+
+
+
+
+ <!--
+    <script>
+    var questionPrompts = function() {
+        var space1 = prompt("Give a noun");
+        var space2 = prompt("Give verb");
+        confirm("Cool, let's play!");
+        document.getElementById("space1").innerHTML = space1 + " ";
+        document.getElementById("space2").innerHTML = space2 + " ";
+        
+        
+    }
+    
+    
+    </script> -->

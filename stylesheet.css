@@ -1,0 +1,104 @@
+/* CSS */
+
+
+body {
+    background-color: #3498db;
+    height: 500px;
+    min-width: 1000px;
+}
+
+/********
+CONTAINERS
+**********/
+
+
+#mainContent {
+    min-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#pageWrapper {
+    min-width: 1000px;
+    min-height: 800px;
+}
+
+
+ul li {
+    text-align: right;
+}
+
+ul li input {
+    margin-left: 20px;
+}
+
+
+
+ul {
+    width: 400px;
+    height: 200px; 
+    list-style: none
+}
+
+
+#leftSide, #rightSide {
+    width: 45%;
+    min-width: 200px;
+    float: left;
+}
+#leftSide {
+    margin-left: 4%;
+}
+
+
+
+#storySelect {
+    text-align: center;
+
+}
+
+
+/*******
+HEADING
+*******/
+#heading {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/*********
+STORY BUTTONS
+*********/
+
+.story {
+    background-color: snow;
+    padding: 10px;
+    font-weight: 800;
+}
+
+
+#startGame {
+    margin-top: 10px;
+    width: 100%;
+    background-color: snow;
+    padding: 2px;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+/********
+STORIES
+*******/
+
+#story1, #story1InputSection,
+#story2, #story2InputSection,
+#story3, #story3InputSection,
+#story4, #story4InputSection,
+#story5, #story5InputSection,
+#startGame {
+    display: none;
+}
+
+
